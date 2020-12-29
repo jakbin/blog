@@ -1,0 +1,10 @@
+.container .row .dj .jd{
+      margin-top: 2%;
+      margin-bottom: 2%;
+      border-radius: 12px;
+      padding-top: 0.1%;
+      padding-left: 7%;
+      padding-right: 4%;
+      padding-bottom: 3%;
+      box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.5);
+    }
