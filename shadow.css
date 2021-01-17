@@ -1,0 +1,54 @@
+:root{
+    --clr:#008cff
+}
+.containr{
+    width: 100%;
+    background: #008cff;
+}
+
+.containr .ro .dj .jd{
+    padding-top: 0.1%;
+      padding-left: 7%;
+      padding-right: 4%;
+      padding-bottom: 3%;
+    margin: 30px;
+    background: var(--clr);
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 0.1);
+    }
+
+.containr .ro .dj .jd.shadow3{
+      box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3), 
+            inset -4px -4px 5px rgba(0, 0, 0, 0.2),
+             10px 40px 40px rgba(0, 0, 0, 0.1);
+}
+
+.containr .ro .dj .jd.shadow1{
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.containr .ro .dj .jd.shadow2{
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.1),
+            inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+            inset  15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container .box.shadow3{
+    box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3), 
+            inset -4px -4px 5px rgba(0, 0, 0, 0.2),
+             10px 40px 40px rgba(0, 0, 0, 0.1);
+}
+
+.containr .row .dj .jd.shadow4{
+    border: 10px solid var(--clr);
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+inset  15px 15px 15px rgba(0, 0, 0, 0.1);
+
+}
