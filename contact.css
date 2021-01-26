@@ -23,27 +23,18 @@ section::before{
     background: #03a9f4;
 }
 
-section .container{
+section .containr{
     position: relative;
-    /* min-width:  1100px; */
     min-width:  100%;
-    min-height: 550px;
+    min-height: 0px;
     display: flex;
     z-index: 1000;
 }
 
-section .container .contactform {
+section .containr .contactform {
     position: absolute;
-    /* padding: 70px 50px;   default
-    padding: 50px 50px 50px 80px;
-    
-    margin: 90px 90px 90px 90px;
-    margin-left: 250px;
-    /* padding-left: 200px; default 
-    width: calc(50% - 1px);
-    height: 100%; */
     background: #fff;
-    margin-top: 6%;
+    margin-top: 8%;
     margin-left: 15%;
     margin-right: 15%;
     padding-top: 4%;
@@ -52,13 +43,13 @@ section .container .contactform {
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
 }
 
-section .container .contactform h2{
+section .containr .contactform h2{
     color: #0f3959;
     font-size: 24px;
     font-weight: 500;
 }
 
-section .container .contactform .formbox{
+section .containr .contactform .formbox{
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -66,23 +57,20 @@ section .container .contactform .formbox{
     padding: 30px;
 }
 
- section .container .contactform .formbox .inputbox{
+ section .containr .contactform .formbox .inputbox{
      width: 100%;
      display: inline;
     position: relative;
-    margin: 0 0 50px 0;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
-/* section .container .contactform .formbox .inputbox.w50{
-    width: 47%;
-} */
-
-section .container .contactform .formbox .inputbox.w100{
+section .containr .contactform .formbox .inputbox.w100{
     width: 100%;
 }
 
-section .container .contactform .formbox .inputbox input,
-section .container .contactform .formbox .inputbox textarea
+section .containr .contactform .formbox .inputbox input,
+section .containr .contactform .formbox .inputbox textarea
 {
     width: 100% !important;
     padding: 5px 0;
@@ -95,11 +83,7 @@ section .container .contactform .formbox .inputbox textarea
     outline: none;
 }
 
-/* section .container .contactform .formbox .inputbox textarea{
-    min-height: 120px;
-} */
-
-section .container .contactform .formbox .inputbox span{
+section .containr .contactform .formbox .inputbox span{
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -111,10 +95,37 @@ section .container .contactform .formbox .inputbox span{
     pointer-events: none;
 }
 
-section .container .contactform .formbox .inputbox input:focus ~ span,
-section .container .contactform .formbox .inputbox textarea:focus ~span,
-section .container .contactform .formbox .inputbox input:valid ~ span,
-section .container .contactform .formbox .inputbox textarea:valid ~span
+@media (max-width: 450px){
+    section .containr  .contactform {
+      margin-top: 30%;
+      margin-left: 3%;
+    margin-right: 4%;
+    }
+     
+}
+
+@media (max-width: 650px) and (min-width: 450px){
+    section .containr .contactform {
+      margin-top: 20%;
+      margin-left: 9%;
+    margin-right: 9%;
+    padding-top: 8%;
+    padding-left: 3%;
+    padding-right: 4%;
+    }
+       
+}
+
+@media (max-width: 1085px) and (min-width: 650px) {
+    section .containr .contactform {
+      margin-top: 11%;
+    }     
+}
+
+section .containr .contactform .formbox .inputbox input:focus ~ span,
+section .containr .contactform .formbox .inputbox textarea:focus ~span,
+section .containr .contactform .formbox .inputbox input:valid ~ span,
+section .containr .contactform .formbox .inputbox textarea:valid ~span
 {
     transform: translateY(-20px);
     font-size: 12px;
@@ -123,7 +134,7 @@ section .container .contactform .formbox .inputbox textarea:valid ~span
     color: #ff568c;
 }
 
-section .container .contactform .formbox .inputbox input[type="submit"]{
+section .containr .contactform .formbox .inputbox input[type="submit"]{
     position: relative;
     background: #0f3959;
     color: #fff;
@@ -133,7 +144,19 @@ section .container .contactform .formbox .inputbox input[type="submit"]{
 }
 
 
-section .container .contactform .formbox .inputbox input[type="submit"]:hover
+section .containr .contactform .formbox .inputbox input[type="submit"]:hover
 {
    background: #ff568c;
+}
+
+@media (max-width: 650px) and (min-width: 450px){
+     section .containr .contactform .formbox .input{
+        margin-top: 14px;
+    }  
+}
+
+@media (max-width: 450px){
+    section .containr .contactform .formbox .input{
+        margin-top: 37px;
+    }
 }
